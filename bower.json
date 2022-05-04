@@ -1,21 +1,23 @@
 {
     "name": "purescript-web-pointerevents",
-    "homepage": "https://github.com/gbagan/purescript-web-pointerevents",
-    "license": "MIT",
+    "license": [
+        "MIT"
+    ],
     "repository": {
-      "type": "git",
-      "url": "https://github.com/gbagan/purescript-web-pointerevents.git"
+        "type": "git",
+        "url": "https://github.com/gbagan/purescript-web-pointerevents"
     },
     "ignore": [
-      "**/.*",
-      "bower_components",
-      "node_modules",
-      "output",
-      "bower.json",
-      "package.json"
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "output"
     ],
     "dependencies": {
-      "purescript-web-dom": "^6.0.0",
-      "purescript-web-uievents": "^4.0.0"
+        "purescript-effect": "^v4.0.0",
+        "purescript-maybe": "^v6.0.0",
+        "purescript-prelude": "^v6.0.0",
+        "purescript-web-dom": "^v6.0.0",
+        "purescript-web-uievents": "^v4.0.0"
     }
 }
