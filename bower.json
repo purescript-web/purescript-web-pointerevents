@@ -1,0 +1,21 @@
+{
+    "name": "purescript-web-touchevents",
+    "homepage": "https://github.com/gbagan/purescript-web-touchevents",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/gbagan/purescript-web-touchevents.git"
+    },
+    "ignore": [
+      "**/.*",
+      "bower_components",
+      "node_modules",
+      "output",
+      "bower.json",
+      "package.json"
+    ],
+    "dependencies": {
+      "purescript-web-dom": "^6.0.0",
+      "purescript-web-uievents": "^4.0.0"
+    }
+}
