@@ -9,14 +9,11 @@ module Web.PointerEvent.PointerEvent
   , fromUIEvent
   , getCoalescedEvents
   , getPredictedEvents
-  , hasPointerCapture
   , height
   , isPrimary
   , pointerId
   , pointerType
   , pressure
-  , releasePointerCapture
-  , setPointerCapture
   , tiltX
   , tiltY
   , toEvent
@@ -27,16 +24,12 @@ module Web.PointerEvent.PointerEvent
   )
   where
 
-import Prelude
 import Data.Maybe (Maybe)
-import Effect (Effect)
 import Unsafe.Coerce (unsafeCoerce)
 import Web.Event.Event (Event)
 import Web.Internal.FFI (unsafeReadProtoTagged)
 import Web.UIEvent.UIEvent (UIEvent)
 import Web.UIEvent.MouseEvent (MouseEvent)
-import Web.DOM.Element (Element)
-import Web.HTML.Navigator (Navigator)
 
 foreign import data PointerEvent :: Type
 data PointerType = Mouse | Touch | Pen
@@ -82,11 +75,4 @@ foreign import altitudeAngle :: PointerEvent -> Number
 foreign import azimuthAngle :: PointerEvent -> Number
 
 foreign import getCoalescedEvents :: PointerEvent -> Array PointerEvent
-
 foreign import getPredictedEvents :: PointerEvent -> Array PointerEvent
-
-foreign import setPointerCapture :: PointerId -> Element -> Effect Unit
-foreign import releasePointerCapture :: PointerId -> Element -> Effect Unit
-foreign import hasPointerCapture :: PointerId -> Element -> Effect Boolean
-
-foreign import maxTouchPoints :: Navigator -> Effect Int

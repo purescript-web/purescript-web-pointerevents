@@ -53,33 +53,3 @@ export function getCoalescedEvents(ev) {
 export function getPredictedEvents(ev) {
   return ev.getPredictedEvents();
 }
-
-export function setPointerCapture(id) {
-  return function(el) {
-    return function () {
-      el.setPointerCapture(id);
-    };
-  };
-}
-
-export function releasePointerCapture(id) {
-  return function(el) {
-    return function () {
-      el.releasePointerCapture(id);
-    };
-  };
-}
-
-export function hasPointerCapture(id) {
-  return function(el) {
-    return function () {
-      return el.hasPointerCapture(id);
-    };
-  };
-}
-
-export function maxTouchPoints(nav) {
-  return function () {
-    return nav.maxTouchPoints;
-  };
-}
