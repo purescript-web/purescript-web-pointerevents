@@ -50,7 +50,7 @@ fromUIEvent = unsafeReadProtoTagged "PointerEvent"
 fromEvent :: Event -> Maybe PointerEvent
 fromEvent = unsafeReadProtoTagged "PointerEvent"
 
-toMouseEvent :: PointerEvent -> UIEvent
+toMouseEvent :: PointerEvent -> MouseEvent
 toMouseEvent = unsafeCoerce
 
 toUIEvent :: PointerEvent -> UIEvent
