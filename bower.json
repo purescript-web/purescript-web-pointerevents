@@ -1,10 +1,10 @@
 {
-    "name": "purescript-web-touchevents",
-    "homepage": "https://github.com/gbagan/purescript-web-touchevents",
+    "name": "purescript-web-pointerevents",
+    "homepage": "https://github.com/gbagan/purescript-web-pointerevents",
     "license": "MIT",
     "repository": {
       "type": "git",
-      "url": "https://github.com/gbagan/purescript-web-touchevents.git"
+      "url": "https://github.com/gbagan/purescript-web-pointerevents.git"
     },
     "ignore": [
       "**/.*",
