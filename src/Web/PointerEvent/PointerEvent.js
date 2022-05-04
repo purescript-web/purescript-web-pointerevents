@@ -77,3 +77,9 @@ export function hasPointerCapture(id) {
     };
   };
 }
+
+export function maxTouchPoints(nav) {
+  return function () {
+    return nav.maxTouchPoints;
+  };
+}

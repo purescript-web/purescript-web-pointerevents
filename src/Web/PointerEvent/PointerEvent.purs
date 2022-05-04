@@ -36,6 +36,7 @@ import Web.Internal.FFI (unsafeReadProtoTagged)
 import Web.UIEvent.UIEvent (UIEvent)
 import Web.UIEvent.MouseEvent (MouseEvent)
 import Web.DOM.Element (Element)
+import Web.HTML.Navigator (Navigator)
 
 foreign import data PointerEvent :: Type
 data PointerType = Mouse | Touch | Pen
@@ -87,3 +88,5 @@ foreign import getPredictedEvents :: PointerEvent -> Array PointerEvent
 foreign import setPointerCapture :: PointerId -> Element -> Effect Unit
 foreign import releasePointerCapture :: PointerId -> Element -> Effect Unit
 foreign import hasPointerCapture :: PointerId -> Element -> Effect Boolean
+
+foreign import maxTouchPoints :: Navigator -> Effect Int
