@@ -1,4 +1,16 @@
-module Web.PointerEvent.EventTypes where
+module Web.PointerEvent.EventTypes
+  ( gotpointercapture
+  , lostpointercapture
+  , pointercancel
+  , pointerdown
+  , pointerenter
+  , pointerleave
+  , pointermove
+  , pointerout
+  , pointerover
+  , pointerup
+  )
+  where
 
 import Web.Event.Event (EventType(..))
 
