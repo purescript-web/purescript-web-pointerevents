@@ -14,6 +14,7 @@ module Web.PointerEvent.PointerEvent
   , pointerId
   , pointerType
   , pressure
+  , tangentialPressure
   , tiltX
   , tiltY
   , toEvent
