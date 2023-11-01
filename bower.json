@@ -18,6 +18,6 @@
         "purescript-maybe": "^v6.0.0",
         "purescript-prelude": "^v6.0.0",
         "purescript-web-dom": "^v6.0.0",
-        "purescript-web-uievents": "^v4.0.0"
+        "purescript-web-uievents": "^v5.0.0"
     }
 }
