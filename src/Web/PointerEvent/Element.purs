@@ -2,8 +2,8 @@ module Web.PointerEvent.Element
   ( hasPointerCapture
   , releasePointerCapture
   , setPointerCapture
-  )
-  where
+  ) where
+
 import Prelude
 import Effect (Effect)
 import Web.PointerEvent.PointerEvent (PointerId)

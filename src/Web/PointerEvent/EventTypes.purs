@@ -9,8 +9,7 @@ module Web.PointerEvent.EventTypes
   , pointerout
   , pointerover
   , pointerup
-  )
-  where
+  ) where
 
 import Web.Event.Event (EventType(..))
 

@@ -22,8 +22,7 @@ module Web.PointerEvent.PointerEvent
   , toUIEvent
   , twist
   , width
-  )
-  where
+  ) where
 
 import Data.Maybe (Maybe)
 import Unsafe.Coerce (unsafeCoerce)
@@ -34,6 +33,7 @@ import Web.UIEvent.MouseEvent (MouseEvent)
 
 foreign import data PointerEvent :: Type
 data PointerType = Mouse | Touch | Pen
+
 foreign import data PointerId :: Type
 
 fromMouseEvent :: MouseEvent -> Maybe PointerEvent
@@ -61,9 +61,9 @@ foreign import pointerTypeImpl :: PointerEvent -> String
 
 pointerType :: PointerEvent -> PointerType
 pointerType e = case pointerTypeImpl e of
-    "pen" -> Pen
-    "touch" -> Touch
-    _ -> Mouse
+  "pen" -> Pen
+  "touch" -> Touch
+  _ -> Mouse
 
 foreign import width :: PointerEvent -> Number
 foreign import height :: PointerEvent -> Number
