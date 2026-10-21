@@ -8,6 +8,7 @@ module Web.PointerEvent.EventTypes
   , pointermove
   , pointerout
   , pointerover
+  , pointerrawupdate
   , pointerup
   ) where
 
@@ -24,6 +25,9 @@ pointerdown = EventType "pointerdown"
 
 pointermove :: EventType
 pointermove = EventType "pointermove"
+
+pointerrawupdate :: EventType
+pointerrawupdate = EventType "pointerrawupdate"
 
 pointerup :: EventType
 pointerup = EventType "pointerup"
