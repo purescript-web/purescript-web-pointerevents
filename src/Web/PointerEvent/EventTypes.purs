@@ -1,5 +1,6 @@
 module Web.PointerEvent.EventTypes
-  ( gotpointercapture
+  ( contextmenu
+  , gotpointercapture
   , lostpointercapture
   , pointercancel
   , pointerdown
@@ -46,3 +47,6 @@ gotpointercapture = EventType "gotpointercapture"
 
 lostpointercapture :: EventType
 lostpointercapture = EventType "lostpointercapture"
+
+contextmenu :: EventType
+contextmenu = EventType "contextmenu"
